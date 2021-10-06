@@ -1,16 +1,18 @@
-# Instalaci-n-Maven
+# Instalacion-Maven
 
 ##Instalar Apache Maven con apt
-Actualizar el indice e instale Maven ingresando los siguientes comandos:
+Actualizar el índice e instale Maven ingresando los siguientes comandos:
 
 ```
  sudo apt update
 ```
+![Captura de pantalla de 2021-10-06 17-14-18](https://user-images.githubusercontent.com/91631138/136243014-4b06edfb-983d-420a-b241-ca37eb2830be.png)
+
 ```
  sudo apt install maven
 ```
 Para ver si se ha instalado correctamente:
-ejecutamos este codigo:
+ejecutamos este código:
 ```
  mvn -version
 ```
@@ -22,30 +24,30 @@ Default locale: es_ES, platform encoding: UTF-8
 OS name: "linux", version: "5.11.0-37-generic", arch: "amd64", family: "unix"
 ```
 ## Instalamos la versión más reciente de Maven:
-Para cambiar al version más reciente cambia el numero de version en los sigientes codigos y pegalo en el terminal
+Para cambiar al versión más reciente cambia el número de versión en los sigientes códigos y pegalo en el terminal:
 ```
 wget https://www.apache.org/dist/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz -P /tmp
 ```
-Despues ejecute estos codigos:
+Después ejecute estos códigos:
 ```
 sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt
 ```
-cambiar la version alli tambien
+Cambiar la versión alli tambien
 ```
 sudo ln -s /opt/apache-maven-3.8.3 /opt/maven
 ```
 ```
 sudo nano /etc/profile.d/maven.sh
 ```
-te va a saltar a otra pagina del terminal y pegar este codigo:
+Te va a saltar a otra página del terminal y pegar este código:
 ```
  export M2_HOME=/opt/maven
  export MAVEN_HOME=/opt/maven
  export PATH=${M2_HOME}/bin:${PATH}
 ```
-despues de ejecutar ese cogido pulsar para guardar:``control+o`` y para salir: ``control+x``
+Después de ejecutar ese cógido pulsar para guardar:``control+o`` y para salir: ``control+x``
 
-segimos con los siguientes codigos:
+Segimos con los siguientes códigos:
 ```
  sudo chmod +x /etc/profile.d/maven.sh
 ```
