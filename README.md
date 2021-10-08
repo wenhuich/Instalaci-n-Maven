@@ -6,11 +6,11 @@ Actualizar el índice e instale Maven ingresando los siguientes comandos:
 ```
  sudo apt update
 ```
-![Captura de pantalla de 2021-10-06 17-14-18](https://user-images.githubusercontent.com/91631138/136243014-4b06edfb-983d-420a-b241-ca37eb2830be.png)
 
 ```
  sudo apt install maven
 ```
+
 Para ver si se ha instalado correctamente:
 ejecutamos este código:
 ```
